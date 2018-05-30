@@ -1,0 +1,47 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="jumbotron">
+    <h1>Доставка товаров</h1>
+
+</div>
+<div>
+    <form action="/" method="post">
+        <div class="form-group">
+            <label for="usr">Имя:</label>
+            <input type="text" class="form-control" id="name" name="name">
+        </div>
+        <div class="form-group">
+            <label for="usr">Фамилия:</label>
+            <input type="text" class="form-control" id="secondname" name="secondname">
+        </div>
+        <div class="form-group">
+            <label for="sel1">Адресс:</label>
+            <select class="form-control" id="adress">
+                <option>Полтава</option>
+                <option>Киев</option>
+                <option>Харьков</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="usr">Вес:</label>
+            <input type="text" class="form-control" id="weight" name="weight">
+        </div>
+        <div class="form-group">
+            <label for="comment">Comment:</label>
+            <textarea class="form-control" rows="5" id="comment"></textarea>
+        </div>
+        <div class="form-group">
+            <label class="radio-inline"><input type="radio" name="optradio" value="letter">Письмо</label>
+            <label class="radio-inline"><input type="radio" name="optradio" value="small_bag" checked>Габаритный</label>
+            <label class="radio-inline"><input type="radio" name="optradio" value="big_bag">Негабаритный</label>
+            <div class="button">
+                <a href="#" class="btn btn-primary btn-lg">Расчитать стоимость &raquo;</a>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+

@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Хранилище DatabaseAppModel" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Delivery">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="first_name" Type="nvarchar" MaxLength="20" />
+          <Property Name="second_name" Type="nvarchar" MaxLength="20" />
+          <Property Name="adress" Type="nvarchar" MaxLength="150" />
+          <Property Name="weight" Type="float" />
+          <Property Name="coment" Type="nvarchar" MaxLength="950" />
+          <Property Name="type" Type="nvarchar" MaxLength="15" />
+          <Property Name="cost_value" Type="float" />
+        </EntityType>
+        <EntityContainer Name="Хранилище DatabaseAppModelContainer">
+          <EntitySet Name="Delivery" EntityType="Self.Delivery" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DatabaseAppModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Delivery">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="first_name" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="second_name" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="adress" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="weight" Type="Double" />
+          <Property Name="coment" Type="String" MaxLength="950" FixedLength="false" Unicode="true" />
+          <Property Name="type" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Name="cost_value" Type="Double" />
+        </EntityType>
+        <EntityContainer Name="DatabaseAppEntities2" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Deliveries" EntityType="Self.Delivery" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Хранилище DatabaseAppModelContainer" CdmEntityContainer="DatabaseAppEntities2">
+          <EntitySetMapping Name="Deliveries">
+            <EntityTypeMapping TypeName="DatabaseAppModel.Delivery">
+              <MappingFragment StoreEntitySet="Delivery">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="first_name" ColumnName="first_name" />
+                <ScalarProperty Name="second_name" ColumnName="second_name" />
+                <ScalarProperty Name="adress" ColumnName="adress" />
+                <ScalarProperty Name="weight" ColumnName="weight" />
+                <ScalarProperty Name="coment" ColumnName="coment" />
+                <ScalarProperty Name="type" ColumnName="type" />
+                <ScalarProperty Name="cost_value" ColumnName="cost_value" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Нет" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
