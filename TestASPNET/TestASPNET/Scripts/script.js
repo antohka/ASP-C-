@@ -25,11 +25,12 @@
                     Comment: arr[4],
                     Radio: arr[5]
                 },           
-                success: function (data) {
-                    console.log(data, typeof data);
+                success: function (str) {
+                    console.log(str);
+                    $("h1").text("Стоимость доставки: " + str);
                 },
                 error: function () {
-                    alert("Произошел сбой");
+                    alert("Произошел сбой. Возможно не подключена база данных ил параметр вес введен не в прафильном формате(количество граммов необходимо водить через запятую)");
                 }
             });
         } else {

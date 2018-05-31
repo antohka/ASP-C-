@@ -49,13 +49,7 @@ namespace TestASPNET.Controllers
             };
             db.Deliveries.Add(person);
             db.SaveChanges();
-
-            return "Ваша заявка принята";
+            return costDelivery.ToString();
         }
-
-
-
-
-
     }
 }
