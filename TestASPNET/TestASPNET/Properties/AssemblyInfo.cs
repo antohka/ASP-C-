@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Управление общими сведениями о сборке осуществляется следующим образом
 // набора атрибутов. Измените значения этих атрибутов для изменения сведений,
 // связанных с этой сборкой.
-[assembly: AssemblyTitle("WebApplication1")]
+[assembly: AssemblyTitle("TestASPNET")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("WebApplication1")]
+[assembly: AssemblyProduct("TestASPNET")]
 [assembly: AssemblyCopyright("© , 2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Следующий GUID служит для ID библиотеки типов typelib, если этот проект видим для COM
-[assembly: Guid("edec4c75-f8d5-473f-a6a4-360102d5b58b")]
+[assembly: Guid("b8129ea9-7f57-4d58-9e53-720091f4edae")]
 
 // Сведения о версии сборки состоят из указанных ниже четырех значений:
 //

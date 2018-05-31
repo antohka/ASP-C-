@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebApplication1.Models
+namespace TestASPNET.Models
 {
     using System;
     using System.Collections.Generic;
@@ -21,6 +21,6 @@ namespace WebApplication1.Models
         public Nullable<double> weight { get; set; }
         public string coment { get; set; }
         public string type { get; set; }
-        public Nullable<double> cost_value { get; set; }
+        public Nullable<double> cost { get; set; }
     }
 }

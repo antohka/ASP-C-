@@ -7,16 +7,16 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebApplication1.Models
+namespace TestASPNET.Models
 {
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class DatabaseAppEntities2 : DbContext
+    public partial class MyDatabaseEntities1 : DbContext
     {
-        public DatabaseAppEntities2()
-            : base("name=DatabaseAppEntities2")
+        public MyDatabaseEntities1()
+            : base("name=MyDatabaseEntities1")
         {
         }
     
